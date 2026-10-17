@@ -1,0 +1,6 @@
+.cache/
+__pycache__/
+*.pyc
+*_notes.md
+*.cards.csv
+.venv/
