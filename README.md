@@ -6,19 +6,19 @@ to the video, and revision questions you can answer in the browser or export as 
 Built because reviewing a two-hour recorded lecture before an exam is slow, and scrubbing
 through the video to find the one thing you half-remember is slower.
 
-> **Demo:** _add your deployed link here_
-> **Screenshot / GIF:** _add `docs/demo.gif` here_
-
+<p align="center">
+  <img src="docs/demo.gif" alt="Demo: a lecture video becomes a study guide and quiz" width="800">
+</p>
 ---
 
 ## What it does
 
-| | |
-|---|---|
-| **Input** | A YouTube URL (or an `.srt` / `.vtt` file if captions are blocked) |
-| **Output** | TL;DR, key takeaways, chapters with clickable timestamps, key terms, a study checklist, and a quiz |
-| **Exports** | Markdown notes, Anki/Quizlet CSV flashcards, raw JSON |
-| **Model** | Any local model served by [Ollama](https://ollama.com) — no API key, no cost, nothing leaves your machine |
+|                   |                                                                                                           |
+| ----------------- | --------------------------------------------------------------------------------------------------------- |
+| **Input**   | A YouTube URL (or an `.srt` / `.vtt` file if captions are blocked)                                    |
+| **Output**  | TL;DR, key takeaways, chapters with clickable timestamps, key terms, a study checklist, and a quiz        |
+| **Exports** | Markdown notes, Anki/Quizlet CSV flashcards, raw JSON                                                     |
+| **Model**   | Any local model served by [Ollama](https://ollama.com) — no API key, no cost, nothing leaves your machine |
 
 Every chapter and every quiz question carries a timestamp, so each one is a link that
 opens the video at the exact moment the point is made.
@@ -56,11 +56,11 @@ Then paste a lecture URL and press **Summarise**.
 
 The sidebar lists every model you have pulled. On a laptop:
 
-| Model | Speed | Notes |
-|---|---|---|
-| `llama3.2:3b` | fastest | good notes, weaker multiple-choice distractors |
-| `llama3.1:8b` | balanced | the default |
-| `gemma2:9b` / `qwen2.5:7b` | slower | slightly better structure |
+| Model                          | Speed    | Notes                                          |
+| ------------------------------ | -------- | ---------------------------------------------- |
+| `llama3.2:3b`                | fastest  | good notes, weaker multiple-choice distractors |
+| `llama3.1:8b`                | balanced | the default                                    |
+| `gemma2:9b` / `qwen2.5:7b` | slower   | slightly better structure                      |
 
 Expect roughly a minute per section on an M-series MacBook Air. Results are cached, so the
 second run on the same video is instant.
